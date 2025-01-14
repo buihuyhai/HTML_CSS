@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Inter;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Content-left*/
+.content-left {
+    display: flex;
+    justify-content: center;
+    width: 756px;
+    height: 1017px;
+    background: #FFFFFF;
+}
+
+
+.inner {
+    width: 421px;
+    height: 604px;
+    min-width: 384px;
+    padding: 40px 40px 64px 40px;
+    border-radius: 12px 0px 0px 0px;
+}
+
+.inner-header {
+    width: 375px;
+    height: 38px;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.inner-header-flag {
+    display: flex;
+    padding: 5px;
+    border-radius: 8px;
+    height: 38px;
+    gap: 14px;
+
+}
+
+.dropdown-menu.show {
+    transform: translate3d(475px, 98.4px, 0px) !important;
+    border-radius: 5px;
+}
+
+hr {
+    margin: 2rem 0;
+    color: #8c8fac;
+}
+
+.btn {
+    padding: 0px;
+}
+
+.inner-header-logo {
+    width: 201.71px;
+    height: 32px;
+
+
+}
+
+.inner-header-img-flag {
+    width: 32px;
+    height: 24px;
+    top: -721px;
+    left: -464px;
+    border-radius: 2px 0px 0px 0px;
+}
+
+
+/*form*/
+form {
+    width: 375px;
+    height: 364.5px;
+    gap: 24px;
+
+
+}
+
+.lable-form {
+    width: 375px;
+    height: 71px;
+    gap: 8px;
+
+}
+
+.lable-form h3 {
+    width: 210px;
+    height: 42px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: left;
+    color: #212121;
+
+}
+
+.lable-form p {
+    width: 350px;
+    height: 21px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+
+    color: #4B5563;
+
+}
+
+.login-info {
+    width: 375px;
+    height: 160.5px;
+    gap: 16px;
+}
+
+label b {
+    width: 375px;
+    height: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    text-align: left;
+
+}
+
+.login-info div input {
+    width: 375px;
+    height: 38px;
+    padding: 10.5px;
+    border-radius: 6px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB
+}
+
+.forgot-password {
+    width: 375px;
+    height: 21px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: left;
+    color: #4B5563;
+
+}
+
+.btn-login {
+    width: 375px;
+    height: 40;
+    padding: 10.5px 17.5px 10.5px 17.5px;
+    gap: 7px;
+    border-radius: 6px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background-color: #3B82F6;
+    border: 1px solid #3B82F6;
+    margin: 24px 0;
+}
+
+
+.register-link {
+    font-size: 14px;
+    display: flex;
+    text-align: left;
+    color: #4B5563;
+}
+
+.register-link a {
+    font-weight: 700;
+    line-height: 21px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    padding-left: 5px;
+}
+
+/*Content-right*/
+.content-right .carousel-item img {
+    width: 756px;
+    height: 1017px;
+}
+
+
+/*footer*/
+.footer {
+    width: 168px;
+    height: 63px;
+    top: 1549px;
+    left: -3293px;
+    padding: 24px 0px 24px 0px;
+    gap: 10px;
+
+}
+
+.footer .footer-content {
+    width: 117px;
+    height: 15px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+    background: #4B5563;
+}
+
+/* Desktop Large: >1512px */
+@media (min-width: 1512px) {
+
+    .content-left,
+    .content-right {
+        width: 50%;
+    }
+
+    .inner {
+        width: 500px;
+        padding: 60px;
+    }
+
+    .content-right .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Desktop Small: 1024px - 1512px */
+@media (min-width: 1024px) and (max-width: 1512px) {
+
+    .content-left,
+    .content-right {
+        width: 50%;
+    }
+
+    .inner {
+        width: 400px;
+        padding: 40px;
+    }
+
+    .content-right .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Mobile: <1024px */
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-left,
+    .content-right {
+        width: 100%;
+        height: auto;
+    }
+
+    .inner {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .content-right .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
