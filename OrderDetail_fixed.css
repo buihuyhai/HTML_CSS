@@ -464,9 +464,11 @@ body {
     font-size: 14px;
     font-weight: 700;
     line-height: 16.94px;
-
 }
-
+.btn-viewcus:hover {
+    color: #fff;
+    background-color:#3B82F6 ;
+}
 .footer {
     background-color: #fff;
     width: 100%;
